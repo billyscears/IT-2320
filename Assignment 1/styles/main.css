@@ -99,6 +99,19 @@ section h2 {
 	padding: 1.5em 0 .25em 0;
 }
 
+.highlight {
+    color: blue;
+	font-size: 130%;
+	padding: 1.5em 0 .25em 0;
+}
+
+section h3 {
+    color: black;
+	font-size: 110%;
+	padding: 0 0 .25em 1em;
+}
+
+
 #padding
 {
     padding: 3em 0 .25em 0;
@@ -108,6 +121,20 @@ section p {
     padding-bottom: 2.75em;
     line-height: 1.5em;
     color: black;
+}
+
+section ul {
+	padding: 0 0 .5em 3em;
+}
+
+section li {
+    padding-bottom: .5em;
+}
+
+section li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
 }
 
 section img {
@@ -134,15 +161,6 @@ section img {
 .box{
     padding: 0em 1em 1em 1em;
 }
-
-/* .type{ */
-    /* display: inline-block; */
-/* } */
-
-/* .desc{ */
-    /* display: inline-block; */
-/* } */
-
 
 
 

@@ -1,4 +1,11 @@
-function Click(x)
+
+
+function MouseOver(x)
 {
-    alert(x);
+    x.className = "highlight";
+}
+
+function MouseOut(x)
+{
+    x.className = "";
 }
