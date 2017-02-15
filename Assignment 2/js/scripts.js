@@ -1,11 +1,15 @@
-
-
-function MouseOver(x)
+window.onload = function()
 {
-    x.className = "highlight";
-}
+    document.getElementById("highlighter").onmouseover = function() {mouseOver()};
+    document.getElementById("highlighter").onmouseout = function() {mouseOut()};
 
-function MouseOut(x)
-{
-    x.className = "";
+    function mouseOver()
+    {
+        document.getElementById("highlighter").className = "highlight";
+    }
+
+    function mouseOut()
+    {
+        document.getElementById("highlighter").className = "";
+    }
 }

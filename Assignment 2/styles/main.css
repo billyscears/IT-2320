@@ -99,16 +99,16 @@ section h2 {
 	padding: 1.5em 0 .25em 0;
 }
 
-.highlight {
-    color: blue;
-	font-size: 130%;
-	padding: 1.5em 0 .25em 0;
-}
-
 section h3 {
     color: black;
 	font-size: 110%;
 	padding: 0 0 .25em 1em;
+}
+
+.highlight {
+    color: blue;
+	font-size: 130%;
+	padding: 1.5em 0 .25em 0;
 }
 
 
