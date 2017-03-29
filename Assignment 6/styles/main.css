@@ -1,0 +1,338 @@
+//* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: grey;
+    height: 100%;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    color: black;
+    width: 99%;
+    height: fit-content;
+    min-height: 700px;
+    max-width: 1100px;
+    margin: 0 auto;
+    border: 3px solid black;
+    background-color: white;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+
+/* the styles for the header */
+header {
+	padding: 1em 0 1em 0;
+	background-color: black;
+}
+header h2 {
+    text-align: center;
+	font-size: 200%;
+	color: white;
+}
+
+/* the styles for the nav menu */
+#nav_menu ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+#nav_menu ul li {
+	float: left;
+    width: 25%;
+}
+#nav_menu ul li a {
+    display: block;
+    font-family: Helvetica;
+    color: white;
+    font-size: 125%;
+    text-align: center;
+    padding: .5em 0;
+    text-decoration: none;
+    background-color: #696969;
+    color: white;
+ 
+}
+#nav_menu a.current {
+	color: black;
+}
+#nav_menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#nav_menu ul ul li {
+	float: none;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* the styles for the main content */
+main {
+	clear: left;
+}
+
+/* the styles for the section */
+section {
+	width: 90%;
+	padding: 0 2.5% 20px 2.5%;
+}
+section h1 {
+    padding-top: 1.25em;
+	font-size: 200%;
+}
+section h2 {
+	color: black;
+	font-size: 130%;
+	padding: 1.5em 0 .25em 0;
+}
+
+.highlight {
+    color: blue;
+	font-size: 130%;
+	padding: 1.5em 0 .25em 0;
+}
+
+section h3 {
+    color: black;
+	font-size: 110%;
+	padding: 0 0 .25em 1em;
+}
+
+
+#padding
+{
+    padding: 3em 0 .25em 0;
+}
+
+section p {
+    padding-bottom: 2.75em;
+    line-height: 1.5em;
+    color: black;
+}
+
+section ul {
+	padding: 0 0 .5em 3em;
+}
+
+section li {
+    padding-bottom: .5em;
+}
+
+section li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+}
+
+section img {
+	float: left;
+	max-width: 50%;
+	min-width: 50px;
+	margin: 0 0 0 1m;
+    padding-top: 4em;
+    padding-bottom: 1em;
+    padding-right: 4em;
+}
+
+.image{
+    float: left;
+    clear: left;
+	max-width: 25%;
+	min-width: 25px;
+	margin: 0 0 0 1em;
+    padding-top: 2em;
+    padding-bottom: 1em;
+    padding-right: 4em;
+}
+
+.box{
+    padding: 0em 1em 1em 1em;
+}
+
+.main-content
+{
+	width: 80%;
+	border: 1px solid black;
+}
+
+@media screen and (max-width: 320px)
+{
+    header {
+        padding: .10em 0 .25em 0;
+        background-color: black;
+    }
+    header h2 {
+        text-align: center;
+        font-size: 130%;
+        color: white;
+    }
+    
+    #nav_menu ul {
+        font-size: 90%;
+    }
+    
+    section img {display: none;}
+    
+    h2 {
+        text-align: center;
+    }
+    
+    #padding {
+            padding: 0;
+    }
+    
+    section p {
+        text-align: justify;
+        line-height: 1.25em;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px)
+{
+    header {
+        padding: .10em 0 .25em 0;
+        background-color: black;
+    }
+    header h2 {
+        text-align: center;
+        font-size: 130%;
+        color: white;
+    }
+    
+    #nav_menu ul {
+        font-size: 90%;
+    }
+    
+    section img {
+        padding: .5em;
+        min-width: 100%;
+    }
+
+       
+    section .box img {
+        display: none;
+    }
+    
+    h2 {
+        text-align: center;
+        clear: both;
+    }
+    
+    #padding {
+            padding: 0;
+    }
+    
+    section p {
+        text-align: justify;
+        line-height: 1.25em;
+        padding-bottom: 0em;
+    }
+    
+    .box h2{
+        padding: 0;
+    }
+    
+}
+
+@media screen and (min-width: 480px) and (max-width: 768px)
+{
+    /* the styles for the main content */
+    main {
+        clear: left;
+    }
+
+    /* the styles for the section */
+    section {
+        width: 90%;
+        padding: 0 2.5% 20px 2.5%;
+    }
+    section h1 {
+        padding-top: 1.25em;
+        font-size: 200%;
+    }
+    section h2 {
+        color: black;
+        font-size: 130%;
+        padding: 1.5em 0 .25em 0;
+    }
+
+    .highlight {
+        color: blue;
+        font-size: 130%;
+        padding: 1.5em 0 .25em 0;
+    }
+
+    section h3 {
+        color: black;
+        font-size: 110%;
+        padding: 0 0 .25em 1em;
+    }
+
+
+    #padding
+    {
+        padding: 3em 0 .25em 0;
+    }
+
+    section p {
+        padding-bottom: 2.75em;
+        line-height: 1.5em;
+        color: black;
+    }
+
+    section ul {
+        padding: 0 0 .5em 3em;
+    }
+
+    section li {
+        padding-bottom: .5em;
+    }
+
+    section li a {
+        text-decoration: none;
+        font-weight: bold;
+        color: blue;
+    }
+
+    section img {
+        float: left;
+        min-width: 50%;
+        min-width: 50px;
+        margin: 0 0 0 1m;
+        padding-top: 4em;
+        padding-bottom: 1em;
+        padding-right: 4em;
+    }
+
+    .image{
+        float: left;
+        clear: left;
+        max-width: 25%;
+        min-width: 25px;
+        margin: 0 0 0 1em;
+        padding-top: 2em;
+        padding-bottom: 1em;
+        padding-right: 4em;
+    }
+
+    .box{
+        padding: 0em 1em 1em 1em;
+    }
+
+}
+
+
+
