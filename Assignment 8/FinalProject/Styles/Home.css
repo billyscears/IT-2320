@@ -1,0 +1,47 @@
+﻿#border {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.left {
+    float: left;
+    display: inline-block;
+    clear: left;
+    width: 50%;
+}
+
+hr {
+    margin: 2em 0;
+}
+
+.table {
+    display: inline-block;
+    width: 50%;
+}
+
+fieldset {
+    margin-top: 0;
+    margin-bottom: .5em;
+    padding: .5em 1em;
+    width:50%;
+}
+
+label {
+    float: left;
+    width: 10em;
+    text-align: left;
+}
+
+input {
+    margin-bottom: 5px;
+}
+
+.button {
+    margin-left: 222px;
+    width: 8em;
+    border-radius: 10px;
+    text-align: center;
+    border-style: none;
+    background: #89d1da;
+}
