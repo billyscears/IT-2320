@@ -1,0 +1,161 @@
+html {
+    background: black;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url("ARBERKLEY.ttf");
+}
+
+header {
+    background: gray;
+}
+
+header h1 {
+    font-family: myFont;
+    font-size: 400%;
+    color: yellow;
+    text-align: center;
+    padding: 25px;
+}
+
+.yellow {
+    width: 40px;
+    height: 20px;
+    background-color: yellow;
+    position: relative;
+    animation-name: animationTestYellow;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes animationTestYellow {
+    from {left: 0px;}
+    to   {left: 100px;}
+}
+
+
+@keyframes animationTestYellow {
+    from {left: 0px;}
+    to   {left: 100px;}
+}
+
+.orange {
+    width: 40px;
+    height: 20px;
+    background-color: orange;
+    position: relative;
+    animation-name: animationTestOrange;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes animationTestOrange {
+    0% {left: 0px;}
+    100% {left: 200px;}
+}
+
+@keyframes animationTestOrange {
+    0% {left: 0px;}
+    100% {left: 200px;}
+}
+
+.darkOrange {
+    width: 40px;
+    height: 20px;
+    background-color: darkorange;
+    position: relative;
+    animation-name: animationTestDarkOrange;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes animationTestDarkOrange {
+    from {left: 0px;}
+    to   {left: 300px;}
+}
+
+@keyframes animationTestDarkOrange {
+    from {left: 0px;}
+    to   {left: 300px;}
+}
+
+.red {
+    width: 40px;
+    height: 20px;
+    background-color: red;
+    position: relative;
+    animation-name: animationTestRed;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes animationTestRed {
+    from {left: 0px;}
+    to   {left: 400px;}
+}
+
+@keyframes animationTestRed {
+    from {left: 0px;}
+    to   {left: 400px;}
+}
+
+.box1 {
+    display: inline-block;
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    background: blue;
+    -webkit-transition: transform 1s;
+    transition: transform 1s;
+}
+
+.box1:hover {
+    transform: rotate(90deg);
+}
+
+.box2 {
+    display: inline-block;
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    background: green;
+    -webkit-transition: transform 3s;
+    transition: transform 3s;
+}
+
+.box2:hover {
+    transform: rotate(-90deg);
+}
+
+.box3 {
+    display: inline-block;
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    background: red;
+    -webkit-transition: translate;
+    transition: translate;
+}
+
+.box3:hover {
+    transform: translate(0, -40px);
+}
+
+.box4 {
+    display: inline-block;
+    margin: 50px;
+    width: 200px;
+    height: 200px;
+    background: orange;
+    -webkit-transition: translate;
+    transition: translate;
+}
+
+.box4:hover {
+    transform: translate(0, 40px);
+}
