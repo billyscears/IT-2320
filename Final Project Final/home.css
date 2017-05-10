@@ -1,0 +1,237 @@
+html {
+    background-color: #e3f9fc;
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 520px;
+    margin: 0 auto;
+    font-family: Calibri;
+    font-size: 12px;
+}
+
+header h1 {
+    font-family: Cambria, serif;
+	font-size: 16px;
+	font-weight: bold;
+    letter-spacing: .5px;
+	
+}
+
+.italic {
+    font-family: Calibri;
+    font-size: 12px;
+    font-style: italic;
+    letter-spacing: .2px;
+}
+
+.mobileHeadings {
+    display: none;
+}
+
+.descUpperLeft p {
+    margin: 0;
+    padding: 0;
+}
+
+#border {
+    display: auto;
+    border-radius: 25px;
+    border: 1px solid gray;
+    min-height: 293.33px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 5px 10px 5px #888888;
+}
+
+.descUpperLeft {
+    display: inline-block;
+    width: 200px;
+    margin: 18px 15px 10px 20px;
+    vertical-align: top;
+}
+
+.acctInfoTopCenter {
+    border-radius: 15px;
+    border: 1px solid gray;
+    display: inline-block;
+    padding: 10px 10px 0px 18px;
+    margin: 10px 0px 35px 40px;
+    background-color: #e3f9fc;
+}
+
+.formUpperRight {
+    display: inline-block;
+}
+
+hr {
+    margin: 5px 0 15px 0;
+}
+
+.descLowerLeft {
+    display: inline-block;
+    width: 150px;
+    margin: 10px 15px 10px 20px;
+    vertical-align: top;
+}
+
+.formLowerRight {
+    display: inline-block;
+}
+
+.acctInfoLowerCenter {
+    display: inline-block;
+    margin: 20px 0 0 100px;
+}
+
+.acctInfoTopCenter label {
+    margin-top: 2px;
+    clear: both;
+    float: left;
+    width: 85px;
+    text-align: left;
+}
+
+.formUpperRight label {
+    margin-top: 2px;
+    clear: both;
+    float: left;
+    width: 75px;
+    text-align: left;
+}
+
+.formLowerRight label {
+    margin-top: 2px;
+    clear: both;
+    float: left;
+    width: 125px;
+    text-align: left;
+}
+
+.acctInfoLowerCenter label {
+    margin-top: 2px;
+    clear: both;
+    float: left;
+    width: 90px;
+    text-align: left;
+}
+
+input {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.acctInfoTopCenter input {
+    clear: both;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.button {
+    float: right;
+    width: 115px;
+    height: 18px;
+    border: .25px solid #89d1da;
+    border-radius: 10px;
+    font-family: Calibri;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    background: #89d1da;
+}
+.button:hover {
+	border: .25px solid gray;
+}
+
+.button2 {
+    display: inline-block;
+    width: 115px;
+    height: 18px;
+    border: .25px solid #89d1da;
+    border-radius: 10px;
+    font-family: Calibri;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    background: #89d1da;
+}
+
+/* iPhone portrait layout (width<=320px) */
+@media only screen and (max-width: 320px) {
+    
+    body {
+         max-width: 300px;
+         margin: 10px 10px 10px 10px;
+    }
+    
+    header h1, .italic, footer p {
+        text-align: center;
+    }
+    
+    #border p {
+        display: none;
+    }
+    
+    .mobileHeadings {
+        margin: 0;
+        display: inline-block;
+    }
+    
+    
+    #border {
+        box-shadow: none;
+    }
+    
+    .formUpperRight input[type=text] {
+        width: 150px;
+    }
+    
+    .formLowerRight input[type=text], .formLowerRight input[type=email]{
+        width: 140px;
+    }
+    
+    .formLowerRight label {
+    margin-top: 2px;
+    clear: both;
+    float: left;
+    margin-right: 15px;
+    width: 110px;
+    text-align: left;
+    }
+    
+    
+    .button {
+    float: left;
+    margin-left: 10px;
+    width: 258px;
+    height: 40px;
+    }
+    
+    .button2 {
+    float: left;
+    margin-left: 10px;
+    width: 258px;
+    height: 40px;
+    }
+    
+    .acctInfoLowerCenter {
+        display: inline-block;
+        margin: 20px 0 0 0px;
+      
+    }
+    
+    .acctInfoTopCenter {
+        border: none;
+        display: inline-block;
+        padding: 0;
+        margin: 20px 0 0 0px;
+        background-color: white;
+    }
+
+
+
+
